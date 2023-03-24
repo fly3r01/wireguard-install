@@ -52,7 +52,7 @@ function checkOS() {
 			exit 1
 		fi
 	elif [[ ${OS} == 'centos' ]] || [[ ${OS} == 'almalinux' ]] || [[ ${OS} == 'rocky' ]]; then
-		if [[ ${VERSION_ID} == 7* ]]; then
+		if [[ ${VERSION_ID} == 6* ]]; then
 			echo "Your version of CentOS (${VERSION_ID}) is not supported. Please use CentOS 8 or later"
 			exit 1
 		fi
